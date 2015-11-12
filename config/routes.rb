@@ -1,4 +1,80 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
+  get 'users/create'
+
+  get 'users/show'
+
+  get 'users/inbox'
+
+  get 'users/destroy'
+
+  get 'users/edit'
+
+  get 'users/update'
+
+  get 'user_sessions/new'
+
+  get 'user_sessions/index'
+
+  get 'user_sessions/create'
+
+  get 'oauths/oauth'
+
+  get 'oauths/callback'
+
+  get 'trades/new'
+
+  get 'trades/index'
+
+  get 'trades/create'
+
+  get 'products/index'
+
+  get 'products/choose_search_method'
+
+  get 'products/show'
+
+  get 'products/new'
+
+  get 'products/create'
+
+  get 'products/edit'
+
+  get 'products/update'
+
+  get 'messages/index'
+
+  get 'messages/show'
+
+  get 'messages/new'
+
+  get 'messages/create'
+
+  get 'messages/edit'
+
+  get 'messages/update'
+
+  get 'messages/destroy'
+
+  get 'gardens/index'
+
+  get 'gardens/choose_search_method'
+
+  get 'gardens/show'
+
+  get 'gardens/create'
+
+  get 'gardens/destroy'
+
+  get 'conversations/new'
+
+  get 'conversations/create'
+
+  get 'conversations/show'
+
+  get 'conversations/destroy'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

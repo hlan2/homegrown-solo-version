@@ -18,6 +18,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+gem 'jquery-turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -32,9 +33,33 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'sorcery'
+gem 'geocoder'
+gem 'bourbon'
+gem 'neat'
+gem 'autoprefixer-rails'
+gem 'font-awesome-sass', '~> 4.4.0'
+gem 'figaro'
+gem 'mini_magick'
+
+##Delayed Jobs
+gem 'delayed_job_active_record'
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Rails 3 and 4
+gem 'kaminari'
+
+# A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts.
+gem 'acts-as-taggable-on', '~> 3.4'
+
+# Components and patterns built with Bourbon and Neat http://refills.bourbon.io
+gem 'refills'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Use sqlite3 as the database for Active Record
+  gem 'factory_girl_rails'
+  gem 'sqlite3'
   gem 'byebug'
+  gem 'pry-rails'
 end
 
 group :development do
@@ -42,6 +67,13 @@ group :development do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  # gem 'spring'
+
+  # This gem is a port of Perl's Data::Faker library that generates fake data.
+  gem 'faker'
 end
 
+
+group :production do
+	gem 'pg'
+end
